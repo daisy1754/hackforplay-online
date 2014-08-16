@@ -1,5 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding-top: 10px;
+  text-align: center;
+  font-family: "omnes-pro", sans-serif;
+}
+
+h1 {
+  font-size: 220%;
+  color: #4f4f4f;
+  font-weight: 100;
+}
+
+.container {
+  padding: 10px;
+  margin: auto;
+  width: 1230px;
+}
+
 #gameFrame {
-  min-width: 600px;
+  width: 600px;
   min-height: 600px;
   margin: 5px;
   float: left;
@@ -24,4 +47,19 @@
   background-color: #0077e7;
   border: none;
   font-size: 16px;
+}
+
+footer {
+  font-size: 80%;
+  border-top: 1px solid #D3D3D3;
+  margin: 0;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #E6E6E6;
+  color: #787878;
+  text-align: right;
+}
+
+footer p {
+  margin: 3px;
 }
