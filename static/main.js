@@ -1,11 +1,13 @@
 $(function() {
   var $gameFrame = $("#gameFrame");
   var $editor = $("#jsEditor");
+  var codeMirror;
   initEditor();
   var reloadGameFrame = function() {
     $gameFrame.off('load');
     $gameFrame.on('load', function() {
       var doc = getDocumentOfFrame($gameFrame[0]);
+      codeMirror.save();
       appendJSTag(doc, {"text": $editor.val() + ";window.onload();"});
       appendJSTag(doc, {"url": "/lib/keyevent-simulator.js"});
     });
@@ -31,6 +33,8 @@ $(function() {
   function initEditor() {
     loadRemoteText("hack-for-play/main.js", function(src) {
       $editor.text(src);
+      codeMirror = CodeMirror.fromTextArea($editor.get(0), {lineNumbers: true, mode: "javascript", lineWrapping: true});
+      codeMirror.setSize(600, 560);
     });
   }
   function loadRemoteText(fileName, onTextLoaded) {

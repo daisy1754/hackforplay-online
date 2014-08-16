@@ -10,10 +10,17 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="main.js"><</script>
         <link rel="stylesheet" href="index.css" type="text/css" />
+        <script type="text/javascript" src="lib/codemirror-4.4/codemirror.js"></script>
+        <script type="text/javascript" src="lib/codemirror-4.4/javascript.js"></script>
+        <link rel="stylesheet" href="lib/codemirror-4.4/codemirror.css" type="text/css" />
     </head>
     <body>
-      <iframe id="gameFrame"></iframe>
-      <textarea id="jsEditor"></textarea>
-      <button id="runButton">Run</button>
+      <div class="container">
+        <iframe id="gameFrame"></iframe>
+        <div class="editorFrame">
+          <textarea id="jsEditor"></textarea>
+          <button id="runButton">実行</button>
+        </div>
+      </div>
     </body>
 </html>

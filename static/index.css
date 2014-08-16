@@ -1,9 +1,27 @@
 #gameFrame {
   min-width: 600px;
   min-height: 600px;
+  margin: 5px;
+  float: left;
 }
 
-#jsEditor {
-  min-width: 600px;
+.editorFrame {
+  width: 600px;
   min-height: 600px;
+  margin: 5px;
+  float: left;
+}
+
+.CodeMirror {
+  border: 1px solid #ddd;
+}
+
+#runButton {
+  float: right;
+  margin-top: 5px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #0077e7;
+  border: none;
+  font-size: 16px;
 }
