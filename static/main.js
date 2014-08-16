@@ -35,6 +35,7 @@ $(function() {
       $editor.text(src);
       codeMirror = CodeMirror.fromTextArea($editor.get(0), {lineNumbers: true, mode: "javascript", lineWrapping: true});
       codeMirror.setSize(600, 560);
+      $(".editorFrame").hide();
     });
   }
   function loadRemoteText(fileName, onTextLoaded) {
@@ -57,3 +58,7 @@ $(function() {
     document.body.appendChild(script);
   }
 });
+
+function revealEditor() {
+  $(".editorFrame").fadeIn(500);
+}

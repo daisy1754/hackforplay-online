@@ -2,8 +2,7 @@
 )
 |   hackforplayへようこそ、冒険者よ。
 |
-|   その様子だと、もうダンジョンを見てきた
-|   ようだな。スライムの斬り心地はどうだっ
+|   スライムの斬り心地はどうだっ
 |   た？...倒せない？...バグってる？
 |
 |   ...その通り!!よくぞ見抜いたな...。
@@ -59,8 +58,7 @@ window.onload = function() {
                 |   ...どこを書き換えればいいか、分かった
                 |   だろうか。思い切って書き換えるのだ!!
                 |
-                |   書き換えたら、まずはファイルを保存して
-                |   次にブラウザを更新するのだ。
+                |   書き換えたら、画面右下の更新ボタンをクリックするのだ!
                 |
                 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -124,9 +122,7 @@ window.onload = function() {
                             case 1: this.message.show("やっぱり、ダメなんだ・・・。さっき石をぶつけてみたけど、ぜんぜんうごかなかったもん"); break;
                             case 2: this.message.show("まいったなぁ。きみだけがたよりだったのになぁ・・・"); break;
                             case 3: this.message.show("そうだ、いいものをあげるよ。・・・さっき、そこでひろったんだ"); break;
-                            case 4: this.message.show("ほら、これだよ");
-                                    createPopup(navigator.onLine ? 'https://note.mu/teramotodaiki/n/nd0add871b1db' : 'offline.html');
-                                    if(!navigator.onLine) alert("【ヒント】インターネットに接続されることをお勧めします"); break;
+                            case 4: this.message.show("ほら、これだよ");parent.revealEditor();break;
                             case 5: this.message.show("どうかな。やくにたちそう？"); break;
                             case 6: this.message.show("ぼく？ぼくは、ここで見ているよ。きみみたいに、つよくないからね");  break;
                             case 7: this.message.close(); break;
