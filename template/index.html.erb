@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>hackforplay-online</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../main.js"></script>
+        <link rel="stylesheet" href="../index.css" type="text/css" />
+        <script type="text/javascript" src="../lib/codemirror-4.4/codemirror.js"></script>
+        <script type="text/javascript" src="../lib/codemirror-4.4/javascript.js"></script>
+        <link rel="stylesheet" href="../lib/codemirror-4.4/codemirror.css" type="text/css" />
+    </head>
+    <body>
+      <header><h1>HackForPlay Online</h1></header>
+      <div class="container">
+        <iframe id="gameFrame"></iframe>
+        <div class="editorFrame">
+          <textarea id="jsEditor"></textarea>
+          <button id="runButton"><%= I18n.t("site.reload") %></button>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+      <footer class="footer">
+        <p><%= I18n.t("site.credit", link_daikiteramoto: '<a href="https://note.mu/teramotodaiki">Daiki Teramoto</a>', link_hackforplay: '<a href="https://note.mu/teramotodaiki/n/n97004eaadc98?magazine_key=m49ef9e0730b9">hackforplay</a>') %></p>
+        <p><%= I18n.t("site.github", link: '<a href="https://github.com/daisy1754/hackforplay-online">github</a>') %></p>
+      </footer>
+    </body>
+</html>

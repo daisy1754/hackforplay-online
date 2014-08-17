@@ -1,0 +1,5 @@
+ja:
+  site:
+    reload: 更新
+    credit: HackForPlay Onlineは%{link_daikiteramoto}さんによる%{link_hackforplay}をWeb上で遊べるように拡張したものです
+    github: <p>ソースコードは%{link}で公開しています</p>

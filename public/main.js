@@ -9,10 +9,10 @@ $(function() {
       var doc = getDocumentOfFrame($gameFrame[0]);
       codeMirror.save();
       appendJSTag(doc, {"text": $editor.val() + ";window.onload();"});
-      appendJSTag(doc, {"url": "/lib/keyevent-simulator.js"});
+      appendJSTag(doc, {"url": "../lib/keyevent-simulator.js"});
     });
     $gameFrame.attr("src", "");
-    $gameFrame.attr("src", "hack-for-play/index.html");
+    $gameFrame.attr("src", "../hack-for-play/index.html");
   };
   reloadGameFrame();
   $("#runButton").click(reloadGameFrame);
@@ -31,7 +31,7 @@ $(function() {
   }
 
   function initEditor() {
-    loadRemoteText("hack-for-play/main.js", function(src) {
+    loadRemoteText("../hack-for-play/main.js", function(src) {
       $editor.text(src);
       codeMirror = CodeMirror.fromTextArea($editor.get(0), {lineNumbers: true, mode: "javascript", lineWrapping: true});
       codeMirror.setSize(600, 560);

@@ -1,0 +1,5 @@
+en:
+  site:
+    reload: Reload
+    credit: HackForPlay Online is developed by daisy1754 as an online-playable version of %{link_hackforplay} (developed by %{link_daikiteramoto})
+    github: <p>Source code is available on %{link}</p>

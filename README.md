@@ -5,7 +5,8 @@ Game where you can _hack_ the world by rewriting JavaScript code. hackforplay is
 
 
 #### How to run
-> ruby server.rb
+> ruby generate_html.rb
+on project root will generate localized files under public/{lang} directories
 
 ==================
 
